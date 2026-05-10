@@ -8,7 +8,7 @@
         }
     },
     "outputDirectory": "public",
-    "buildCommand": "npm run build && php composer.phar install --no-dev",
+    "buildCommand": "npm run build && php composer.phar install --no-dev && php artisan migrate",
     "installCommand": "dnf install php -y && dnf install php-common php-mysqlnd php-gd -y && npm install && php -v && php -r \"copy('https://getcomposer.org/installer', 'composer-setup.php');\" && php composer-setup.php && ls -l",
     "routes": [
         {
