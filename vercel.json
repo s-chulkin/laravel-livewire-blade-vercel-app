@@ -1,4 +1,5 @@
 {
+    "$schema": "https://openapi.vercel.sh/vercel.json",
     "version": 2,
     "framework": null,
     "functions": {
@@ -7,6 +8,7 @@
         }
     },
     "outputDirectory": "public",
+    "installCommand": "dnf install php -y && npm install && php -v && php -r \"copy('https://getcomposer.org/installer', 'composer-setup.php');\" && php composer-setup.php && sudo mv composer.phar /usr/local/bin/composer && composer install",
     "routes": [
         {
             "src": "/build/(.*)",
