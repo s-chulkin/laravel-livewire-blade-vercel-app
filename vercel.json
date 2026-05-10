@@ -8,7 +8,7 @@
         }
     },
     "outputDirectory": "public",
-    "installCommand": "dnf install php -y && npm install && php -v && php -r \"copy('https://getcomposer.org/installer', 'composer-setup.php');\" && php composer-setup.php && php composer.phar install",
+    "installCommand": "dnf install php php-mysql -y && npm install && php -v && php -r \"copy('https://getcomposer.org/installer', 'composer-setup.php');\" && php composer-setup.php && php composer.phar install",
     "routes": [
         {
             "src": "/build/(.*)",
